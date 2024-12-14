@@ -3,7 +3,6 @@ import AiChat from "./pages/AiChat";
 import CameraDetect from "./pages/CameraDetect";
 import Donation from "./pages/Donation";
 import Info from "./pages/Info";
-import Landing from "./pages/Landing";
 
 function App() {
   const router = createBrowserRouter(
@@ -13,7 +12,6 @@ function App() {
         <Route path="/ai-chat" element={<AiChat />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/info" element={<Info />} />
-        <Route path="/landing" element={<Landing />} />
       </>
     )
   );
