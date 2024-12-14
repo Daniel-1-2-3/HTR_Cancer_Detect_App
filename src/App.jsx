@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from "react-router-dom";
-import AiChat from "./pages/AiChat";
 import CameraDetect from "./pages/CameraDetect";
-import Donation from "./pages/Donation";
+import StoryBoard from "./pages/StoryBoard";
 import Info from "./pages/Info";
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
     createRoutesFromElements(
       <>
         <Route path="/" element={<CameraDetect />} />
-        <Route path="/ai-chat" element={<AiChat />} />
-        <Route path="/donation" element={<Donation />} />
+        <Route path="/storyboard" element={<StoryBoard />} />
         <Route path="/info" element={<Info />} />
       </>
     )
