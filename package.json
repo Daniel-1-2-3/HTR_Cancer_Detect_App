@@ -10,9 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@nextui-org/card": "^2.2.7",
+    "@nextui-org/link": "^2.2.5",
+    "@nextui-org/navbar": "^2.2.5",
+    "@nextui-org/react": "^2.6.8",
+    "@splinetool/react-spline": "^4.0.0",
+    "cancer-detect": "file:",
+    "framer-motion": "^11.14.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.0.2"
+    "react-router-dom": "^7.0.2",
+    "react-webcam": "^7.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

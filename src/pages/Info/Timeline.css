@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7fafc;
+}
+
+.timeline-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    border-left: 3px solid #000;
+    padding-left: 20px;
+}
+
+.event {
+    position: relative;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.event.left {
+    left: -20px;
+}
+
+.event.right {
+    left: 20px;
+}
+
+.timeline-container.active .event {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.event p {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.content-container {
+    flex: 1; /* Allow content to take available space */
+    padding: 20px;
+  }
+  
+  .event img {
+    width: 250px; /* Set the width of the image */
+    height: auto;
+    margin-left: 20px; /* Add some space between the image and text */
+  }

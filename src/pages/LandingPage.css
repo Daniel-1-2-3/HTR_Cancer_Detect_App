@@ -1,0 +1,48 @@
+/* Container for the logo and text */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    margin-left: 12%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    animation: slideIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Bezier curve animation */
+  }
+  
+  /* Logo image */
+  .logo {
+    width: 150px;  /* Increase logo size */
+    height: 150px; /* Increase logo size */
+    margin-right: 60px; /* Adjust space between logo and text */
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  /* Text */
+  .logo-text {
+    font-size: 7rem;  /* Increase text size */
+    color: black;     /* Change text color to black */
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 0.5s forwards; /* Delay text fade */
+  }
+  
+  /* Slide-in animation using Bezier curve */
+  @keyframes slideIn {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 10%;
+    }
+  }
+  
+  /* Fade-in animation for logo and text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  

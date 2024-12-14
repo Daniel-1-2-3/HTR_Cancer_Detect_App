@@ -1,0 +1,97 @@
+.storyboard-container {
+    background-image: url('/storyboard/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sticky-note {
+    position: absolute;
+    width: 200px; /* Larger sticky note size */
+    height: 200px; /* Larger sticky note size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .sticky-note:hover {
+    transform: scale(1.1);
+  }
+  
+  .sticky-note-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the sticky note image fits properly */
+    border-radius: 10px;
+  }
+  
+  .sticky-note p {
+    position: absolute;
+    top: 45%; /* Adjust this value to move the name higher or lower */
+    bottom: 10px; /* Adjusted to ensure text doesn't overlap too much */
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .modal-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .modal h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .modal p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .modal button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }  
