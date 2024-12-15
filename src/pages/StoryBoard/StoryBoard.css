@@ -10,8 +10,8 @@
   
   .sticky-note {
     position: absolute;
-    width: 200px; /* Larger sticky note size */
-    height: 200px; /* Larger sticky note size */
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +30,14 @@
   .sticky-note-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the sticky note image fits properly */
+    object-fit: cover; 
     border-radius: 10px;
   }
   
   .sticky-note p {
     position: absolute;
-    top: 45%; /* Adjust this value to move the name higher or lower */
-    bottom: 10px; /* Adjusted to ensure text doesn't overlap too much */
+    top: 45%;
+    bottom: 10px;
     font-size: 20px;
     color: #333;
     text-align: center;
