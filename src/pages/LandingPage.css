@@ -1,4 +1,3 @@
-/* Container for the logo and text */
 .logo-container {
     position: absolute;
     top: 50%;
@@ -9,7 +8,6 @@
     animation: slideIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Bezier curve animation */
   }
   
-  /* Logo image */
   .logo {
     width: 150px;  /* Increase logo size */
     height: 150px; /* Increase logo size */
@@ -18,16 +16,14 @@
     animation: fadeIn 2s ease-in forwards;
   }
   
-  /* Text */
   .logo-text {
-    font-size: 7rem;  /* Increase text size */
-    color: black;     /* Change text color to black */
+    font-size: 7rem;
+    color: black; 
     font-weight: bold;
     opacity: 0;
-    animation: fadeIn 2s ease-in 0.5s forwards; /* Delay text fade */
+    animation: fadeIn 2s ease-in 0.5s forwards;
   }
   
-  /* Slide-in animation using Bezier curve */
   @keyframes slideIn {
     0% {
       left: -100%;
@@ -37,7 +33,6 @@
     }
   }
   
-  /* Fade-in animation for logo and text */
   @keyframes fadeIn {
     0% {
       opacity: 0;
