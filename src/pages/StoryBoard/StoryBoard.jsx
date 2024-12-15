@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./StoryBoard.css";
 import Navbar from "../Navbar";
 
-// Sample story data
 const stories = [
   {
     id: 1,
