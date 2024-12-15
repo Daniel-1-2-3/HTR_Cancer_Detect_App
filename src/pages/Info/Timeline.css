@@ -55,12 +55,12 @@ body {
 }
 
 .content-container {
-    flex: 1; /* Allow content to take available space */
+    flex: 1;
     padding: 20px;
   }
   
   .event img {
-    width: 250px; /* Set the width of the image */
+    width: 250px;
     height: auto;
-    margin-left: 20px; /* Add some space between the image and text */
+    margin-left: 20px;
   }
