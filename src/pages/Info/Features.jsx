@@ -54,7 +54,6 @@ const Features = () => {
       `https://randomuser.me/api/portraits/women/${Math.floor(Math.random() * 100)}.jpg`
     ];
 
-    // Alternate between male and female images based on the index (even index = male, odd index = female)
     return index % 2 === 1  ? maleImages[0] : femaleImages[0];
   };
 
@@ -63,7 +62,7 @@ const Features = () => {
     const halfLength = Math.floor(reviewText.length / 2);
     const firstHalf = reviewText.slice(0, halfLength);
     const secondHalf = reviewText.slice(halfLength);
-    return `${firstHalf}<br/>${secondHalf}`; // Inserting a line break
+    return `${firstHalf}<br/>${secondHalf}`;
   };
 
   return (
