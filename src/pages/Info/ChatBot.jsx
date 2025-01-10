@@ -18,7 +18,7 @@ const AIChat = ({ closeChat }) => {
     const [userInput, setUserInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
-    const openAiApiKey = "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";
+    const openAiApiKey = "";
     const apiEndpoint = "https://api.openai.com/v1/chat/completions";
 
     const sendMessage = async () => {
